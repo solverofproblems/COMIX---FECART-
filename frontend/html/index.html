@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMIX - Chatbot Inteligente de Comércio Exterior</title>
+    <meta name="author" content="Carlos Eduardo de Lima">
+    <meta name="description" content="COMIX - Chatbot especializado em comércio exterior, desenvolvido pela FECAP">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="container">
+            <div class="logo">
+
+                <div style="margin-right: 1vw;">
+                    <img src="../img/earth.png" style="width: 3.5vw;">
+                </div>
+
+                <div style="display: flex; flex-flow: column wrap;">
+                    <h1>COMIX</h1>
+                    <span class="subtitulo-logo">Comércio Exterior Inteligente</span>
+                </div>
+            </div>
+            <nav class="navegacao">
+                <ul class="menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#chatbot">Chatbot</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <main>
+        <!-- Seção Inicial -->
+        <section id="inicio" class="secao-inicial">
+            <div class="container">
+                <div class="conteudo-inicial">
+                    <h2 class="titulo-principal">Bem-vindo ao COMIX</h2>
+                    <p class="descricao-principal">
+                        O COMIX é um chatbot inteligente especializado em comércio exterior, 
+                        desenvolvido para auxiliar profissionais, estudantes e empresas na 
+                        compreensão e navegação do complexo mundo do comércio internacional.
+                    </p>
+                    <div class="destaques">
+                        <div class="destaque">
+                            <span class="icone">🌍</span>
+                            <span>Comércio Global</span>
+                        </div>
+                        <div class="destaque">
+                            <span class="icone">🤖</span>
+                            <span>IA Especializada</span>
+                        </div>
+                        <div class="destaque">
+                            <span class="icone">📊</span>
+                            <span>Dados Atualizados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Área do Chatbot -->
+        <section id="chatbot" class="area-chatbot">
+            <div class="container">
+                <h2 class="titulo-secao">Converse com o COMIX</h2>
+                <div class="chat-container">
+                    <div class="area-mensagens" id="area-mensagens">
+                        <div class="mensagem-bot">
+                            <div class="avatar-bot">
+                                <img src="../img/earth.png" style="width: 40px;">
+                            </div>
+                            <div class="texto-mensagem">
+                                Olá! Sou o COMIX, seu assistente especializado em comércio exterior. 
+                                Como posso ajudá-lo hoje?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="area-input">
+                        <input type="text" id="input-mensagem" placeholder="Digite sua pergunta sobre comércio exterior..." class="input-chat" required>
+                        <button id="botao-enviar" class="botao-enviar" onclick()="enviarMensagemBackend()">
+                            <span class="icone-enviar">→</span>
+                        </button>
+                        <button id="botao-limpar" class="botao-limpar" title="Limpar conversa">
+                            <span>🗑️</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards Explicativos -->
+        <section id="sobre" class="secao-cards">
+            <div class="container">
+                <h2 class="titulo-secao">Por que escolher o COMIX?</h2>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="icone-card">🎯</div>
+                        <h3 class="titulo-card">Especialização</h3>
+                        <p class="texto-card">
+                            Desenvolvido especificamente para o comércio exterior, 
+                            o COMIX possui conhecimento profundo sobre regulamentações, 
+                            procedimentos e tendências do mercado internacional.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="icone-card">⚡</div>
+                        <h3 class="titulo-card">Respostas Rápidas</h3>
+                        <p class="texto-card">
+                            Obtenha respostas instantâneas para suas dúvidas sobre 
+                            importação, exportação, documentação e legislação 
+                            do comércio exterior.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="icone-card">📈</div>
+                        <h3 class="titulo-card">Atualizações Constantes</h3>
+                        <p class="texto-card">
+                            Nosso sistema é constantemente atualizado com as 
+                            mais recentes mudanças na legislação e tendências 
+                            do comércio internacional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="conteudo-rodape">
+                <div class="info-autor">
+                    <h3>Desenvolvido por</h3>
+                    <p>Carlos Eduardo de Lima</p>
+                    <p>Estudante da FECAP</p>
+                </div>
+                <div class="info-instituicao">
+                    <h3>FECAP</h3>
+                    <p>Fundacao Escola de Comércio Álvares Penteado</p>
+                    <p>Excelência em Educação Empresarial</p>
+                </div>
+                <div class="redes-sociais">
+                    <h3>Redes Sociais</h3>
+                    <div class="links-redes">
+                        <a href="https://www.linkedin.com/in/carlos-eduardo-de-lima-b573a1380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="link-rede" title="LinkedIn">LinkedIn</a>
+                        <a href="https://www.instagram.com/caduu_0709" class="link-rede" title="Instagram">Instagram</a>
+                        <a href="https://github.com/solverofproblems" class="link-rede" title="GitHub">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 COMIX - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/javascript.js"></script>
+</body>
+</html>
