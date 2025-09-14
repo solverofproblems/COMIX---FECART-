@@ -7,6 +7,8 @@ dotenv.config();
 
 const app = express();
 
+const porta = process.env.PORT || 3000;
+
 app.use(cors());
 
 const ai = new GoogleGenAI({apiKey: process.env.GEMINI_API_KEY});
@@ -34,4 +36,6 @@ app.get('/perguntaUsuario', async (req, res) => {
 )
 
 
-app.listen(3000);
+app.listen(porta, () => {
+    console.log(`Servidor rodando na porta ${porta}`);
+})

@@ -32,7 +32,7 @@ function adicionarMensagemUsuario(mensagem) {
     divMensagem.setAttribute('data-timestamp', timestamp);
     divMensagem.innerHTML = `
             <div class="avatar-usuario" style="padding: 1%;">
-                <img src=../img/icone-usuario.png style="width:40px;">
+                <img src=img/icone-usuario.png style="width:40px;">
             </div>
             <div class="texto-mensagem-usuario">${mensagem}</div>
         `;
@@ -58,7 +58,7 @@ function adicionarMensagemBot(mensagem) {
     divMensagem.className = 'mensagem-bot';
     divMensagem.setAttribute('data-timestamp', timestamp);
     divMensagem.innerHTML = `
-            <div class="avatar-bot"><img src="../img/earth.png" style="width: 40px;"></div>
+            <div class="avatar-bot"><img src="img/earth.png" style="width: 40px;"></div>
             <div class="texto-mensagem">${mensagem}</div>
         `;
 
@@ -130,7 +130,7 @@ function simularDigitacao(mensagem) {
 async function enviarMensagemBackend() {
 
 
-    axios.get('http://localhost:3000/perguntaUsuario', {
+    axios.get('https://comix-fecart.onrender.com/perguntaUsuario', {
         params: { pergunta: inputMensagem.value }
     })
         .then(function (res) {
@@ -181,7 +181,7 @@ function limparHistorico() {
     historicoMensagens = [];
     areaMensagens.innerHTML = `
             <div class="mensagem-bot">
-                <div class="avatar-bot"><img src="../img/earth.png" style="width: 40px;"></div>
+                <div class="avatar-bot"><img src="img/earth.png" style="width: 40px;"></div>
                 <div class="texto-mensagem">
                     Olá! Sou o COMIX, seu assistente especializado em comércio exterior. 
                     Como posso ajudá-lo hoje?
